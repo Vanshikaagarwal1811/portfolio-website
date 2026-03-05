@@ -13,7 +13,7 @@ body{
 .navbar ul{
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 400px;
     list-style: none;
 }
 .intro{
@@ -91,4 +91,20 @@ h1 span{
     .projects{
         grid-template-columns: 1fr;
     }
+}
+.contact{
+    background-color: lightcoral;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+.navbar a{
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+.navbar a:hover{
+color: pink;
 }

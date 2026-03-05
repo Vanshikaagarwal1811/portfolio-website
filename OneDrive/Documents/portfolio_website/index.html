@@ -9,13 +9,13 @@
 <body>
     <div class="navbar">
     <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">PROJECTS</a></li>
-        <li><a href="#">CONTACT</a></li>
+        
+        <li><a href="#ABOUT">ABOUT</a></li>
+        <li><a href="#PROJECTS">PROJECTS</a></li>
+        <li><a href="#CONTACT">CONTACT</a></li>
     </ul>
 </div>
-    
+    <section id="ABOUT">
     <div class="intro">
         <h1>Hi, I'm <span>  Vanshika  </span> 👋</h1>
         <h1>Aspiring Full Stack Developer</h1>
@@ -43,9 +43,9 @@
     
     <img src="images/my_pic.jpg" alt="My picture">
     </div>
-    
-    <section class="projects">
-
+    </section>
+    <section id="PROJECTS">
+        <h2 style="text-align:center;">My Projects</h2>
     <div class="project-card">
         <h3>Food Blog Website</h3>
         <p>A responsive food blog website built using HTML, CSS and JavaScript.</p>
@@ -67,7 +67,18 @@
         <p>More exciting projects coming soon.</p>
         <a href="https://yourlink.com" target="_blank" class="btn">View Project</a>
     </div>
-
-</section>
+    </section>
+    <section id="CONTACT">
+        <div class="contact">
+        <h2>contact me!</h2>
+        <p>Email: vgarg0210@gmail.com</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        </div>
+    </section>
 </body>
 </html>
