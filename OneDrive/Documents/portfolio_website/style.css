@@ -13,7 +13,7 @@ body{
 .navbar ul{
     display: flex;
     justify-content: center;
-    gap: 400px;
+    gap: 300px;
     list-style: none;
 }
 .intro{
