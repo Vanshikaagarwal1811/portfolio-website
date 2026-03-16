@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#travelform">Travel form</a></li>
+        </ul>
+        <button onclick = "toggleMode()">DARK MODE</button>
+    </div>
+    <section id="home">
+        <div class="home">
+            <h1>Travel Planner</h1>
+            <p>Plan your next adventure with ease!</p>
+            <img src="travel.jpg" alt="Travel Image">
+        </div>
+    </section>
+    <section id="destinations">
+        <div class="destinations">
+            <h2>Popular Destinations</h2>
+            <p>Discover amazing places around the world!</p>
+            <div class="card-container">
+                <div class="card">
+                    <img src="paris.jpg" alt="Paris">
+                    <h3>Paris</h3>
+                    <p>The city of love and lights.</p>
+                </div>
+                <div class="card">
+                    <img src="bali.jpg" alt="Bali">
+                    <h3>Bali</h3>
+                    <p>A tropical paradise for relaxation.</p>
+                </div>
+                <div class="card">
+                    <img src="newyork.jpg" alt="New York">
+                    <h3>New York</h3>
+                    <p>The city that never sleeps.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="explore">
+        <div class="explore">
+        <h2>Explore More Destinations</h2>
+        <input type="text" id="search-input" placeholder="Search country">
+        <button id="search-btn">Search</button>
+        <div id="api-destinations"></div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about">
+            <h2>About Us</h2>
+            <p>We are passionate about helping you plan your perfect trip. Our team of travel experts is dedicated to providing you with the best travel tips, guides, and recommendations.</p>
+            <div class="about-container">
+            <div class="about-box">
+                <h2>Features</h2>
+                <ul>
+                    <li>Personalized travel itineraries</li>
+                    <li>Expert travel advice</li>
+                    <li>Exclusive travel deals</li>
+                    <li>24/7 customer support</li>
+                </ul>
+            </div>
+            <div class="about-box">
+                <h2>Why Choose Us?</h2>
+                <ul>
+                    <li>Trusted by thousands of travelers worldwide</li>
+                    <li>Comprehensive travel resources</li>
+                    <li>Easy-to-use platform</li>
+                    <li>Commitment to customer satisfaction</li>
+                </ul>
+            </div>
+            <div class="about-box">
+                <h2>What We Offer?</h2>
+                <ul>
+                    <li>Customized travel plans</li>
+                    <li>Destination guides</li>
+                    <li>Travel tips and advice</li>
+                    <li>Exclusive travel deals</li>
+                </ul>
+            </div>
+            <h2>Plan Your Next Adventure with Ease!</h2>
+            </div>
+        </div>
+    </section>
+    <section class="travelform">
+        <h2>Get in Touch</h2>
+        <p>Have questions or need assistance? We're here to help!</p>
+        <form id="travelform" action="https://formspree.io/f/mlgppdng" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <span class="Error" id="NameError"></span>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <span class="Error" id="EmailError"></span>
+            <br>
+            <label for="phone">Phone Number:</label>
+            <textarea type="number" id="phone" placeholder="Your Phone Number" required></textarea>
+            <span class="Error" id="PhoneError"></span>
+            <br>
+            <label for="travelers">Number of Travelers:</label>
+            <input type="number" id="travelers" placeholder="Number of Travelers" required>
+            <span class="Error" id="TravelersError"></span>
+            <br>
+            <label for="travel-type">Travel Type:</label>
+            <select name="travel-type" id="travel-type">
+                <option value="">Select Travel Type</option>
+                <option value="solo">Solo</option>
+                <option value="couple">Couple</option>
+                <option value="family">Family</option>
+            </select>
+            <span class="Error" id="Travel-typeError"></span>
+            <br>
+            <label for="destination">Destination:</label>
+            <textarea id="destination" placeholder="Your Message" required></textarea>
+            <span class="Error" id="DestinationError"></span>
+            <br>
+            <label for="budget-range">Budget Range:</label>
+            <select name="budget range" id="budget-range">
+                <option value="">Select Budget Range</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <span class="Error" id="Budget-rangeError"></span>
+            <br>
+            <label for="mode-of-transport">Mode of Transport:</label>
+            <select name="Mode of transport" id="mode-of-transport">
+                <option value="">Select Mode of Transport</option>
+                <option value="flight">Flight</option>
+                <option value="train">Train</option>
+                <option value="car">Car</option>
+            </select>
+            <span class="Error" id="Mode-of-transportError"></span>
+            <br>
+            <label for="additional-details">Special Details or Notes:</label>
+            <textarea name="Additional Details" id="additional-details" placeholder="Additional Details" required></textarea>
+            <span class="Error" id="Additional-detailsError"></span>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>

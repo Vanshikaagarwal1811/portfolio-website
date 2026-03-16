@@ -1,0 +1,207 @@
+ div.home {
+        text-align: center;
+        padding: 50px;
+        background-color: peachpuff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+    }
+    div.home img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    div.home{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+    @media (max-width: 768px){
+        div.home{
+            flex-direction: column;
+        }
+    }
+    div.navbar ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    div.navbar a{
+        color: aliceblue;
+        font-weight: bold;
+        margin: 10px;
+    }
+    div.navbar a:hover{
+        color: pink;
+    }
+    .card-container{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+    div.destinations{
+        background-color: pink;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+    }
+    .card{
+        width: auto;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        background-color: white;
+        text-align: center;
+        transition: transform 0.4s;
+    }
+    .card:hover{
+        transform: translate(-8px);
+        background-color: brown;
+    }
+    @media (max-width: 768px){
+        .card-container{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .about{
+        background-color: lightblue;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+    }
+    .about ul{
+        list-style-type: none;
+    }
+    .about-container{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .about-box{
+        width: 300px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        background-color: white;
+        text-align: center;
+    }
+    .about-box:hover{
+        transform: translate(-8px);
+        background-color: lightgray;
+    }
+    .contact{
+        background-color: lightgreen;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+        display: flex;
+        flex-direction: column;
+    }
+   .travelform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 20px;
+    background-color: thistle;
+   } 
+   .travelform input, .travelform select{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+    gap: 10px;
+   }
+   .travelform button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+   }
+    .travelform button:hover{
+     background-color: gray;
+    }
+   /* Dark mode styles */
+    body.dark-mode {
+        background-color: #121212;
+        color: #ffffff;
+    }
+    body.dark-mode .navbar ul {
+        background-color: #333333;
+    }
+    body.dark-mode .navbar a {
+        color: #ffffff;
+    }
+    body.dark-mode .card {
+        background-color: #1e1e1e;
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    }
+    body.dark-mode .card:hover {
+        background-color: #333333;
+    }
+    .dark-mode div.destinations {
+        background-color: #333333;
+    }
+    .dark-mode div.home {
+        background-color: #1e1e1e;
+    }
+    .dark-mode .about {
+        background-color: #333333;
+    }
+    .dark-mode .about-box {
+        background-color: #1e1e1e;
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    }
+    .dark-mode .about-box:hover {
+        background-color: #333333;
+    }
+    .dark-mode .contact {
+        background-color: #333333;
+    }
+#api-destinations {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#api-destinations div{
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width:180px;
+}
+#api-destinations div:hover{
+    background-color: lightgray;
+    transform: translate(-5px);
+}
+.dark-mode .explore {
+    background-color: #333333;
+    color: #ffffff;
+}
+.dark-mode #api-destinations div {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+.dark-mode .travelform {
+    background-color: #333333;
+    color: #ffffff;
+}
+.dark-mode .travelform input, .dark-mode .travelform select {
+    background-color: #1e1e1e;
+    border: 1px solid #555555;
+    color: #ffffff;
+}
