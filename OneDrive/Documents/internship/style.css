@@ -18,22 +18,21 @@
         flex-direction: column;
         align-content: center;
     }
-    @media (max-width: 768px){
-        div.home{
-            flex-direction: column;
-        }
-    }
     div.navbar ul{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         background-color: black;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        list-style: none;
+        padding: 10px;
     }
     div.navbar a{
         color: aliceblue;
         font-weight: bold;
         margin: 10px;
+        display: block;
+        text-decoration: none;
     }
     div.navbar a:hover{
         color: pink;
@@ -63,12 +62,6 @@
     .card:hover{
         transform: translate(-8px);
         background-color: brown;
-    }
-    @media (max-width: 768px){
-        .card-container{
-            flex-direction: column;
-            align-items: center;
-        }
     }
     .about{
         background-color: lightblue;
@@ -204,4 +197,25 @@
     background-color: #1e1e1e;
     border: 1px solid #555555;
     color: #ffffff;
+}
+@media screen and (max-width: 768px){
+    div.navbar ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.navbar li{
+        width:100%;
+        text-align: center;
+        border-bottom: 1px solid grey;
+    }
+
+    div.navbar a{
+        padding: 10px;
+    }
+}
+div.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
